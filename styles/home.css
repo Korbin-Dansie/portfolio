@@ -15,14 +15,17 @@
     align-items: center;
     width: 100%;
 
+    box-sizing: border-box;  
 }
 
 figure{
     border: solid 6px black;
     background-color: rgb(255, 255, 255);
-
+    
     position: relative;
-    height: 100%;
+
+    height: auto;
+    width: auto;
 
     /* margin: auto; */
     padding: 0;
@@ -30,8 +33,14 @@ figure{
 }
 
 img {
-    width: 100%;
+    width: auto;
     height: auto;
+    max-height: 50vh;
+
+    object-fit: fill;
+
+    padding: 0;
+    margin: 0;
 }
 
 .figCap{
@@ -54,22 +63,25 @@ img {
 */
 
 
+/* X-Small 438 */
+
+
+
   /* Small */
   /* Display content inline */
   @media screen and (max-width: 700px) {
     .figContainer {
-        height: 50vh;    
+        /* height: 50vh;     */
     }
 
     figure{
-        max-height: 100%;
-        max-width: 100%;
-        box-sizing: border-box;  
+        /* max-height: 100%;
+        max-width: 100%; */
     }
 
     img{
-        max-height: 100%;
-        width: 100%;
+        /* max-height: 50vh;
+        width: 100%; */
     }
   }
 
