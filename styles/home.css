@@ -1,0 +1,79 @@
+.name{
+    font-family: 'Courgette', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.figContainer{
+    margin-bottom: 1rem;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure{
+
+    border: solid 6px black;
+    background-color: rgb(255, 255, 255);
+
+
+    position: relative;
+    height: 100%;
+
+    /* margin: auto; */
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.figCap{
+    text-align: center;
+
+    width: 100%;
+    background-color: silver;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* Min trigger when screen is greater than 
+    Min-width == 600
+    screen = 601 
+
+    Max trigger when screen is less than
+
+    Common break points: 600px, 768px, 992px
+*/
+
+
+  /* Medium */
+  @media screen and (max-width: 520px) {
+    .figContainer {
+        height: 50vh;      
+    }
+
+    img{
+        height: 100%;
+        width: auto;
+    }
+  }
+  
+
+  /* @media screen and (max-width: 700px) {
+    .figContainer {
+        width: auto;
+        max-height: 50vh;
+    }
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+  } */
